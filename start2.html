@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>인류멸망시나리오</title>
+	<style type="text/css">
+		html{background: black;}
+		body,div, p, section, button {padding: 0; margin: 0; }
+  @font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }    
+    html,body{margin: 0; padding: 0; font-family: 'NotoSerifKR';   }	
+		p{padding: 3px;}
+p.typing-txt{
+  position:relative;
+  display: inline-block;
+  height: 30px; overflow: hidden;
+  animation: typingAni 1.5s 0s steps(40, end) 1; 
+  animation-fill-mode: forwards;
+}
+
+p.typing-txt2{
+  position:relative;
+  display: inline-block;
+  height: 30px; overflow: hidden;
+  animation: typingAni 2.7s 1.8s steps(40, end) 1; animation-fill-mode: forwards;
+}
+
+p.typing-txt3{
+  position:relative;
+  display: inline-block;
+  height: 30px; overflow: hidden;
+  animation: typingAni3 1.7s 4s steps(40, end) 1; animation-fill-mode: forwards;
+}
+
+p.typing-txt3::after{
+  position:absolute; 
+  display:block;
+  content:"도전해보시겠어요?"; 
+  width: 1px; 
+  height: 30px;
+  top : 3px;
+  right:0; 
+  border-right: 2px solid ;
+  animation: cursor 0.5s 6.7s step-end infinite ;
+}
+
+
+button {border: 1px solid white; border-radius: 10px; text-align: center; width: 100px; background-color: black; padding: 8px; font-size: 1em; cursor: pointer; }
+
+footer{background: black;  font-family: 'SunBatang-Bold' margin-top: 220px; margin-bottom: 40px; color: white; text-align: center;padding: 15;}
+ 	
+
+@keyframes typingAni {
+  0%{width:0%; color: black;}
+  20%{color: white;}
+  100%{width: 600px;  color: white;};
+}
+@keyframes typingAni3 {
+  0%{width:0%; color: black;}
+  20%{color: white;}
+  100%{width: 204px;  color: white;};
+}
+
+@keyframes cursor{
+  0%{ color: black;}
+  50%{color: white;}
+  100%{color: black;};
+}
+
+    </style> </head>
+<body>
+<section style="  top: 30%; position: fixed; left: 35%; font-size: 1.5em;">	
+<div>
+<p class="typing-txt"> 아하! 인류멸망은 처음이신가요? </p> </div>
+
+<div>  <p class="typing-txt2">간단하게 선택만 하시면 된답니다!</p> 
+ </div>
+  <div>
+  <p class="typing-txt3" >도전해보시겠어요?</p> 
+
+ </div>	
+
+ </section>
+ 		 <div style="position: absolute; top: 58%; left: 45%; font-size: 1.2vw; line-height: 1.8;">
+	<button onclick="location.href='main1.html'" ><a href="main1.html" style="color: white; text-decoration: none;"> 확인 </a> </button> 
+	</div>	
+ 
+
+
+</body>
+</html>
