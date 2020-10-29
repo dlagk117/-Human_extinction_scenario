@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>인류멸망시나리오</title>
+	<style type="text/css">
+		html{background: black;}
+	@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }		
+		html,body{margin: 0; background: black; padding: 0; font-family: 'NotoSerifKR'; color: white; font-size: 20px; line-height: 1.8; position: relative; }	
+		#monitor{ position: fixed; 
+				background: black;
+				padding:5px; 
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+		section{ position: relative; }
+.image-container{overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+.open {animation: zero 2s 2s forwards;}
+.open2 {animation: unzero 3s 2s forwards;}
+
+		.반대{position: absolute; top: 30%;width: 700px; display: block; left: 5%; opacity: 0;}
+		.찬성{position: absolute; top: 30%;width: 700px; display: block; left: 50%;opacity: 0;}
+		.반대_2{position: absolute; width: 800px; display: block; left: 15%;}
+		.hov:hover {opacity: 0.8;}
+
+		.giif{ display: block; position: absolute;  opacity: 0; }		
+		@keyframes zero { from{opacity: 1;} to{opacity: 0;} }	
+		@keyframes zerozero { from{opacity: 0;} to{opacity: 0;} }	
+		@keyframes unzero { from{opacity: 0;} to{opacity: 1;} }	
+		@keyframes banzero { from{opacity: 0;} to{opacity: 0.5;} }	
+
+
+    </style> 
+</head>
+
+<body>
+<div id="monitor"></div>
+<section  >
+
+<a href="select.html" style="text-decoration: none;">
+	<div  >
+		<p  style="  color: white; position: fixed; top: 45%; left: 40%; font-size: 1.5em; text-align: center; line-height: 1.7; "> 인류멸망까지 1일 남았습니다. </p>
+	</div></a>
+
+
+
+</section>
+
+
+
+
+	<script type="text/javascript">
+
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+		 	var A = 1
+			before.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after.style.opacity= "1";}else
+				{after.style.opacity= "0";}
+			
+			}
+			var B = 1
+			before2.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after2.style.opacity= "1";}else
+				{after2.style.opacity= "0";}
+			
+			}
+
+	}	</script>
+
+	
+</body>
+</html>

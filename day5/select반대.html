@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>인류멸망시나리오</title>
+	<style type="text/css">
+	@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }		
+		html,body{margin: 0; background: black; padding: 0; font-family: 'NotoSerifKR'; color: white; font-size: 1.3vw; line-height: 1.8; position: relative; }
+		section { position: relative;}
+		#monitor{ position: fixed; 
+				background: black;
+				padding:5px; opacity: 0;
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+		.hov:hover {opacity: 0.5;}
+		.image-container{overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+		a { text-decoration:none }
+
+				.giif{ display: block; position: absolute;  opacity: 0; }		
+		@keyframes zero { from{opacity: 1;} to{opacity: 0;} }	
+		@keyframes zerozero { from{opacity: 0;} to{opacity: 0;} }	
+		@keyframes unzero { from{opacity: 0;} to{opacity: 1;} }	
+		@keyframes banzero { from{opacity: 0;} to{opacity: 0.5;} }	
+		@keyframes unzeroturn { from{opacity: 0; transform: rotate(60deg);} to{opacity: 1;transform: rotate(0deg);} }	
+		@keyframes unzerodown { from{opacity: 1; top: 20%;} to{opacity: 1; top: 25%;} }	
+		@keyframes unzeroside { from{opacity: 1; left: -9%;} to{opacity: 1; left: 10%;} }							
+
+	</style>
+</head>
+
+<body>	
+<div id="monitor"></div>
+
+	<section style="height: 2500px;">
+<div>
+	<img src="free2.png"  id="pr1" style="opacity: 1; position: fixed; width: 50%; left: 0%;">
+  <p id="pr2" style="position: fixed; opacity: 1; left: 55%; top: 25%;">
+말도 안되는 소리! 당신은 그럴수는 없다며<br> 외계인들에게 당장 이 곳에서 떠나라고 지시했습니다! <br>외계인들은 불만을 표현하며 사라졌습니다.<br>
+
+외계인들이 사라지고 나서 인류는 안심했습니다.<br> 그리고 드디어 외계인이라는 존재를 발견했으니 우리는 대비를 해야합니다!<br> 
+우주과학에 대한 연구에 박차를 가했습니다.<br>  우주를 감시하고 인류 모두는 공동체라는 점을 실감했습니다. 
+
+
+
+
+
+
+</div>
+
+
+<div>
+	<img src="free.png"  id="pr3" style="opacity: 0; position: fixed; width: 50%; left: 0%;">
+<p id="pr4" style="position: fixed; left: 55%; top: 10%; opacity: 0;  ">
+우주는 이제 신비한 탐험의 공간이 아닌 위험한 공간이 되어버렸지만,<br> 우리 행성은 여전히 푸르고 아름답습니다.<br>
+
+그렇게 안심을 하던 찰나,<br> 우주과학에 대한 연구를 해도 우리의 기술만으로는 한계가 있습니다.<br> 더 발전된 기술을 시험하려면 우주로 나가야합니다.<br> 외계인에 두려움을 가진 사람들은 아무도 우주에 가고싶어하지 않았습니다. 
+
+
+ 
+
+</p>
+
+</div>
+
+
+<div>
+	<img src="free3.png"  id="pr5" style="opacity: 0; position: fixed;  width: 50%; left: 0%;">
+ <p id="pr6" style="position: fixed; left: 55%; top: 10%; opacity: 0;  ">
+그렇게 같은 곳을 맴돌던 인류는 <br>우주감시위원회에서 끔찍한 소식을 듣게 됩니다. <br>
+한달 뒤 운석이 이 행성에 떨어질 겁니다. <br>
+부딪힐 확률이 99.3%이며, 우리의 기술로는 파괴할 수 없습니다.<br> 아! 인류의 역사는 우주의 먼지로 사라지겠군요.
+
+
+
+</p>
+</div>
+
+
+
+
+	<a href="../finalday/finalday.html"><div style="background: white; width:100px; height: 40px;padding-top: 10px; color: black; right: 0; top: 80%; position: fixed; text-align: center;"> Next </div></a>
+</section>
+
+
+	<script type="text/javascript">
+
+
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+			if(500 < t){pr1.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(500 > t){pr1.style.animation = "unzero 1.5s both";}
+			else{}
+
+
+			if(500 < t){pr2.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(500 > t){pr2.style.animation = "unzero 0.5s both";}
+			else{}	
+
+			if(600 < t){pr3.style.animation = "unzero 1s both";}
+			else{}
+			if(600 > t){pr3.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr3.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(600 < t){pr4.style.animation = "unzerodown 1s both";}
+			else{}
+			if(600 > t){pr4.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr4.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+			if(1100 < t){pr5.style.animation = "unzero 1.5s both";}
+			else{}
+			if(1100 > t){pr5.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr5.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+
+			if(1100 < t){pr6.style.animation = "unzerodown 1.5s both";}
+			else{}
+			if(1100 > t){pr6.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr6.style.animation = "zerozero 1.5s both";}
+			else{}				
+}
+		 	var A = 1
+			before.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after.style.opacity= "1";}else
+				{after.style.opacity= "0";}
+			
+			}
+			var B = 1
+			before2.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after2.style.opacity= "1";}else
+				{after2.style.opacity= "0";}
+			
+			}
+
+	</script>
+</body>
+</html>	
