@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>인류멸망시나리오</title>
+	<style type="text/css">
+	@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }		
+		html,body{margin: 0; background: black; padding: 0; font-family: 'NotoSerifKR'; color: white; font-size: 1.8vw; line-height: 1.8; position: relative; }
+		section { position: relative;}
+		#monitor{ position: fixed; 
+				background: black;
+				padding:5px; opacity: 0;
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+
+
+		@keyframes zero { from{opacity: 1;} to{opacity: 0;} }	
+		@keyframes zerozero { from{opacity: 0;} to{opacity: 0;} }	
+		@keyframes unzero { from{opacity: 0;} to{opacity: 1;} }	
+		@keyframes banzero { from{opacity: 0;} to{opacity: 0.5;} }	
+		@keyframes unzeroturn { from{ opacity: 1; transform: rotate(0deg);} to{ opacity: 1; transform: rotate(360deg);} }  
+		@keyframes unzeroturn2 { from{opacity: 1; transform: rotate(0deg);} to{opacity: 1;transform: rotate(30deg);} }			
+		@keyframes unzerodown { from{opacity: 1; top: -5%;} to{opacity: 1; top: 0%;} }	
+		@keyframes unzeroside { from{opacity: 1; left: -9%;} to{opacity: 1; left: 10%;} }
+		@keyframes unzeroside2 { from{opacity: 1; left: -12%;} to{opacity: 1; left: 0%;} }					
+
+		@keyframes bomb1 { from{ opacity: 1; width: 50px; left: -2%;} to{ opacity: 1; width: 1000px; left: 50%;} }					
+
+
+
+button {border: 1px solid white; border-radius: 10px; text-align: center; width: 100px; background-color: black; padding: 8px; font-size: 1em; cursor: pointer; }
+
+footer{background: black;  font-family: 'SunBatang-Bold';  font-size: 12px; color: white;  text-align: center;padding: 15px;}
+ </style> </head>
+
+
+<body>
+	<div id="monitor"></div>
+
+<section style="height: 3000px;">	
+<div><img src="ai12.png"  style="position: fixed; overflow: hidden; top: -30%; opacity: 20%; width: 100%;"></div>
+
+	<div>
+	<p  id="tt1" style="  top: 25%; position: fixed; opacity: 0;  left: 15%; "> 오늘은 인류멸망의 날입니다.</p> </div>
+
+	<div >  
+		<p id="tt2" style=" top: 32%; position: fixed; opacity: 0;  left: 15%; ">당신이 선택한 결과는 어땠나요?</p> 
+	 </div>
+  
+  	<div>
+  	<p  id="tt3" style="  top: 39%; position: fixed; opacity: 0; left: 15%;">만족스러우신가요?</p> </div>	
+
+
+<div><img src="planet.png" id="plan" style="position: fixed; opacity: 0;  overflow: hidden; width: 3000px; top: 30%; left: 0%;"></div>
+<div><img src="fire.gif" id="tt4" style="position: fixed; opacity: 0; overflow: hidden;"></div>
+
+	<div>
+	<p  id="tt5" style="  top: 25%; position: fixed; opacity: 0; left: 15%; "> 당연히 만족스럽지는 않겠죠.</p> </div>
+
+	<div >  
+		<p id="tt6" style=" top: 32%; position: fixed; opacity: 0;  left: 15%; ">하지만 당신의 고민이 아무 의미 없는 것 또한 아닙니다.</p> 
+	 </div>
+  
+  	<div>
+  	<p  id="tt7" style="  top: 39%; position: fixed; opacity: 0;  left: 15%;">그저 모든 선택에는 책임이 있을 뿐입니다.</p> </div>	
+
+  	<div>
+	<p  id="tt8" style="  top: 25%; position: fixed; opacity: 0; left: 15%; "> 스스로 선택한 결과를 받아들인다는 것은 쉬워보이면서도 어렵습니다.</p> </div>
+
+	<div >  
+		<p id="tt9" style=" top: 32%; position: fixed; opacity: 0;  left: 15%; "> 시나리오는 끝이 났지만 모든 것을 지켜본 당신은  </p> 
+	 </div>
+  
+  	<div>
+  	<p  id="tt10" style="  top: 39%; position: fixed; opacity: 0;  left: 15%;">계속해서 선택하고 나아갈 것 입니다.</p> </div>		
+
+ </section>
+<section style="height: 2000px; background: black;">
+	<div><img src="credit.png" id="tt11" style="position: fixed; overflow: hidden; opacity: 0; width: 50%; top: 0;  left: 25%;"></div>
+
+
+	<a href="..//index.html"><div style="background: white; width:100px; height: 40px;padding-top: 10px; color: black; left: 0; font-size: 18px; top: 90%; position: absolute; text-align: center;"> 처음으로 </div></a>	
+</section>
+
+
+
+
+<footer>
+	2020HKNU_DigitalProject _ @copyright Lee Iamha
+</footer>
+
+
+
+
+	<script type="text/javascript">
+
+			window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+			if(0 < t){tt1.style.animation = "unzero 1s both";}
+			else{}
+			if(0 > t){tt1.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(500 < t){tt1.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(80 < t){tt2.style.animation = "unzero 1s both";}
+			else{}
+			if(80 > t){tt2.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(500 < t){tt2.style.animation = "zerozero 1.5s both";}
+			else{}		
+			if(150 < t){tt3.style.animation = "unzero 1s both";}
+			else{}
+			if(150 > t){tt3.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(500 < t){tt3.style.animation = "zerozero 1.5s both";}
+			else{}	
+
+			if(550 < t){tt5.style.animation = "unzero 1s both";}
+			else{}
+			if(550 > t){tt5.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(950 < t){tt5.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(660 < t){tt6.style.animation = "unzero 1s both";}
+			else{}
+			if(660 > t){tt6.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(950 < t){tt6.style.animation = "zerozero 1.5s both";}
+			else{}		
+			if(780 < t){tt7.style.animation = "unzero 1s both";}
+			else{}
+			if(780 > t){tt7.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(950 < t){tt7.style.animation = "zerozero 1.5s both";}
+			else{}	
+
+			if(1000 < t){tt8.style.animation = "unzero 1s both";}
+			else{}
+			if(1000 > t){tt8.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1850 < t){tt8.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(1100 < t){tt9.style.animation = "unzero 1s both";}
+			else{}
+			if(1100 > t){tt9.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1850 < t){tt9.style.animation = "zerozero 1.5s both";}
+			else{}		
+			if(1200 < t){tt10.style.animation = "unzero 1s both";}
+			else{}
+			if(1200 > t){tt10.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1850 < t){tt10.style.animation = "zerozero 1.5s both";}
+			else{}	
+
+			if(3100 < t){tt11.style.animation = "unzero 2.1s both";}
+			else{}
+			if(3100 > t){tt11.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(4850 < t){tt11.style.animation = "zerozero 1.5s both";}
+			else{}
+
+
+
+			if(0 < t){plan.style.animation = "unzeroturn 45.2s ease infinite";}
+			else{}
+			if(0 > t){plan.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(3000 < t){plan.style.animation = "zerozero 1.5s both";}
+			else{}		
+			if(10 < t){tt4.style.animation = "bomb1  50s forwards";}
+			else{}
+			if(10 > t){tt4.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(3000 < t){tt4.style.animation = "zerozero 1.5s both";}
+			else{}								
+
+}
+</script>
+
+	
+</body>
+</html>
