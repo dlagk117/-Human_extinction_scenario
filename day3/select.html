@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>인류멸망시나리오</title>
+	<style type="text/css">
+		html{background: white;}
+		body,div, p, section, button {padding: 0; margin: 0; }
+		@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+		div{font-family: 'Noto Sans KR', sans-serif; }
+		html {background: black; overflow: hidden;}	
+		#monitor{ position: fixed; 
+				background: black;
+				padding:5px; opacity: 0;
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+		section{ position: relative; }
+		.반대_2{position: absolute; width: 800px; display: block; left: 15%;}
+		.hov:hover {opacity: 0.8;}
+
+		.giif{ display: block; position: absolute;  opacity: 0; }
+		.image-container{overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+		.open {animation: zero 2s 2s forwards;}
+		.open2 {animation: unzero 3s 2s forwards;}
+
+		.반대{position: absolute; top: 18%;width: 49%; display: block; left: 0%; }
+		.찬성{position: absolute; top: 18%;width: 49%; display: block; left: 50%;}
+		.반대_2{position: absolute; width: 800px; display: block; left: 15%;}
+		.hov:hover {opacity: 0.8;}
+		.angle{transform: rotate(0deg); transition: all ease 0.5s; }
+		.angle:hover {transform: rotate(-10deg);}
+		.light{ transition: all ease 0.5s; }
+		.light:hover {opacity: 0.5;}		
+
+	</style>	
+</head>
+<body>
+	<div style="width: 40%; ">
+		<a href="복제찬성.html"><img src="인간복제찬성.png" class="반대 hov open2" id="before"></a>
+		<a href="복제반대.html"><img src="인간복제반대.png" class="찬성 hov open2" id="before2"></a>
+	</div>
+	<div>
+		<img src="복제찬성.png" class="angle" style=" left: 24%;  top:19%;width: 40%; position: absolute;grid-column-end: ">
+	</div>
+	<div>
+		<img src="복제반대.png"class="angle" style="z-index: 5;left: 35%; top:8%; width: 40%;position: absolute;">
+	</div>	
+	<div style="height: 1050px; width: 100%; ">
+		<a href="select찬성.html"><img src="복제찬성-1.png"class="light" style="z-index: 5;left: 5%; top:80%; width: 35%; position: fixed;"></a>
+		<a href="select반대.html"><img src="복제반대-1.png"class="light" style="z-index: 5;left: 55%; top:80%; width: 35%; position: fixed;"></a>
+	</div>	
+</body>
+</html>
