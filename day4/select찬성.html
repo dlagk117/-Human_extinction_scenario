@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>인류멸망시나리오</title>
+	<style type="text/css">
+	@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }		
+		html,body{margin: 0; background: black; padding: 0; font-family: 'NotoSerifKR'; color: white; font-size: 1.3vw; line-height: 1.8; position: relative; }
+		section { position: relative;}
+		#monitor{ position: fixed; 
+				background: black;
+				padding:5px; opacity: 0;
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+		.hov:hover {opacity: 0.5;}
+		.image-container{overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+		a { text-decoration:none }
+
+				.giif{ display: block; position: absolute;  opacity: 0; }		
+		@keyframes zero { from{opacity: 1;} to{opacity: 0;} }	
+		@keyframes zerozero { from{opacity: 0;} to{opacity: 0;} }	
+		@keyframes unzero { from{opacity: 0;} to{opacity: 1;} }	
+		@keyframes banzero { from{opacity: 0;} to{opacity: 0.5;} }	
+		@keyframes unzeroturn { from{opacity: 0; transform: rotate(60deg);} to{opacity: 1;transform: rotate(0deg);} }	
+		@keyframes unzerodown { from{opacity: 1; top: 20%;} to{opacity: 1; top: 25%;} }	
+		@keyframes unzeroside { from{opacity: 1; left: -9%;} to{opacity: 1; left: 10%;} }							
+
+	</style>
+</head>
+
+<body>	
+<div id="monitor"></div>
+
+	<section style="height: 2500px;">
+<div>
+	<img src="free4.png"  id="pr1" style="opacity: 1; position: fixed; width: 50%; left: 0%;">
+  <p id="pr2" style="position: fixed; opacity: 1; left: 55%; top: 25%;">
+당신은 인공지능의 말에 고개를 끄덕였다.<br>
+반복되는 노동 뿐만 아니라, 다양한 분야에서 인공지능의 힘을
+빌리게 됐습니다.<br>
+
+인공지능이 일을 처리하자, 우리의 일상은 빠르게 달라졌습니다.<br> 자율주행차가 돌아다니고, 면접과 일처리는 모두 AI의 선택에 달렸습니다.<br> 고용에 있어서 학연, 지연이 영향을 미치지 못했고<br> 범죄자의 형량도 알맞게 내려졌습니다.<br>
+
+
+
+
+
+
+</div>
+
+
+<div>
+	<img src="free5.png"  id="pr3" style="opacity: 0; position: fixed; width: 50%; left: 0%;">
+<p id="pr4" style="position: fixed; left: 55%; top: 10%; opacity: 0;  ">
+선거에 대한 비리도 없어졌고<br> 중요한 외교문제도 AI의 조언에 따라 진행되었습니다.<br>
+
+하지만 AI가 모두 옳은 결정을 내리지는 않았습니다.<br> 수집된 데이터에는 이미 차별이 담겨있었습니다.<br> 여전히 남성이 여성보다 유리하고 <br>백인이 흑인보다 유리했습니다.<br> 
+동정을 모르는 AI들의 냉혹한 판단에 사람들은 심장을 졸였습니다.<br>
+ 
+
+</p>
+
+</div>
+
+
+<div>
+	<img src="free6.png"  id="pr5" style="opacity: 0; position: fixed;  width: 50%; left: 0%;">
+ <p id="pr6" style="position: fixed; left: 55%; top: 10%; opacity: 0;  ">
+저 기계들은 한번의 실수도 용납하지 않습니다.<br> AI가 일자리를 대체하면서 일자리를 잃은 사람들은<br> 이곳저곳을 돌아다녔지만 그곳도 AI의 자리였습니다.<br> 
+인간이 스치는 일상의 모든 곳은<br> 기계 데이터 안에서 감시되고 있습니다.
+
+
+</p>
+</div>
+
+
+
+
+	<a href="../day5/day5.html"><div style="background: white; width:100px; height: 40px;padding-top: 10px; color: black; right: 0; top: 80%; position: fixed; text-align: center;"> Next </div></a>
+</section>
+
+
+	<script type="text/javascript">
+
+
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+			if(500 < t){pr1.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(500 > t){pr1.style.animation = "unzero 1.5s both";}
+			else{}
+
+
+			if(500 < t){pr2.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(500 > t){pr2.style.animation = "unzero 0.5s both";}
+			else{}
+
+			if(600 < t){pr3.style.animation = "unzero 1s both";}
+			else{}
+			if(600 > t){pr3.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr3.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(600 < t){pr4.style.animation = "unzerodown 1s both";}
+			else{}
+			if(600 > t){pr4.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr4.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+			if(1100 < t){pr5.style.animation = "unzero 1.5s both";}
+			else{}
+			if(1100 > t){pr5.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr5.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+
+			if(1100 < t){pr6.style.animation = "unzerodown 1.5s both";}
+			else{}
+			if(1100 > t){pr6.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr6.style.animation = "zerozero 1.5s both";}
+			else{}				
+}
+		 	var A = 1
+			before.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after.style.opacity= "1";}else
+				{after.style.opacity= "0";}
+			
+			}
+			var B = 1
+			before2.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after2.style.opacity= "1";}else
+				{after2.style.opacity= "0";}
+			
+			}
+
+	</script>
+</body>
+</html>	
