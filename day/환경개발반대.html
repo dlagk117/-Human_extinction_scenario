@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>인류멸망시나리오</title>
+	<style type="text/css">
+	@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }		
+		html,body{margin: 0; padding: 0; font-family: 'NotoSerifKR'; color: white; font-size: 20px; position: relative; }
+		section { position: relative;}
+		#monitor{ position: fixed; 
+				background: black;
+				padding:5px; opacity: 0;
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+		.hov:hover {opacity: 0.5;}
+		.image-container{overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+		a { text-decoration:none }
+
+				.giif{ display: block; position: absolute;  opacity: 0; }		
+		@keyframes zero { from{opacity: 1;} to{opacity: 0;} }	
+		@keyframes zerozero { from{opacity: 0;} to{opacity: 0;} }	
+		@keyframes unzero { from{opacity: 0;} to{opacity: 1;} }	
+		@keyframes banzero { from{opacity: 0;} to{opacity: 0.5;} }	
+		@keyframes unzeroturn { from{opacity: 0; transform: rotate(60deg);} to{opacity: 1;transform: rotate(0deg);} }	
+		@keyframes unzerodown { from{opacity: 1; top: 0%;} to{opacity: 1; top: 5%;} }	
+		@keyframes unzeroside { from{opacity: 1; top: -5%; left: 8%;} to{opacity: 1; top: 5%; left: 13%;} }		
+		@keyframes unzeroshake { from{opacity: 1; transform: rotate(0deg);} to{opacity: 1; transform: rotate(-10deg);} }					
+
+
+
+	</style>
+</head>
+
+<body>
+	<div id="monitor"></div>
+	<section style="height: 9100px;">
+<div>
+	<img src="nosave1.png"  id="pr1" style="opacity: 0; top: 5%; position: fixed; width: 70%; left: 15%;">
+</div>
+<div>
+	<img src="nosave17.png"  id="pr22" style="opacity: 0;top: 5%;position: fixed; width: 70%; left: 18%;">
+	<img src="nosave2.png"  id="pr2" style="opacity: 0; top: 5%; position: fixed; width: 70%; left: 15%;">
+
+
+</div>
+<div>
+	<img src="nosave3.png"  id="pr3" style="opacity: 0; position: fixed;  width: 70%; top: 8%; left: 15%;">
+</div>
+<div>
+	<img src="nosave5.png"  id="pr6" style="opacity: 0; position: fixed;  width: 80%; left: 10%;">
+	<img src="nosave4.png"  id="pr4" style="opacity: 0; position: fixed;  width: 90%;  left: 5%; ">	
+	
+	<img src="nosave6.png"  id="pr5" style="opacity: 0; position: fixed; width: 80%; left: 10%;">
+
+</div>
+<div>
+	<img src="nosave7.png"  id="pr7" style="opacity: 0; position: fixed; width: 80%; left: 5%;">
+	<img src="nosave8.png"  id="pr8" style="opacity: 0; position: fixed; top: 5%; width: 80%; left: 13%;">
+	<img src="nosave9.png"  id="pr9" style="opacity: 0; position: fixed;  width: 80%; ">
+	
+</div>
+<div>
+
+	<img src="nosave10.png"  id="pr10" style="opacity: 0; position: fixed; left: 10%;   width: 80%; ">
+	<img src="nosave11.png"  id="pr11" style="opacity: 0; position: fixed; left: 10%;   width: 80%; ">	
+	<img src="nosave12.png"  id="pr12" style="opacity: 0; position: fixed; left: 10%;   width: 80%; ">	
+</div>
+
+<div>
+
+	<img src="nosave14.gif"  id="pr13" style="opacity: 0; position: fixed; left: 10%;   width: 80%; ">
+	<img src="nosave13.png"  id="pr14" style="opacity: 0; position: fixed; left: 10%;   width: 80%; ">	
+
+</div>
+<div>
+
+	<img src="nosave14.png"  id="pr15" style="opacity: 0; position: fixed; left: 5%;   width: 90%; ">
+	<img src="nosave15.png"  id="pr16" style="opacity: 0; position: absolute; left: 3%;   width: 95%; top: 75%; ">		
+	<img src="nosave16.png"  id="pr17" style="opacity: 0; position: fixed; left: 10%;   width: 80%; top: -20%; ">	
+
+</div>
+
+
+
+
+
+	<a href="select.html"><div style="background: black; width:100px; height: 50px;padding-top: 20px; color: white; top: 80%; position: fixed; text-align: center;"> BACK </div></a>
+</section>
+
+
+	<script type="text/javascript">
+
+
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+			if(30 < t){pr1.style.animation = "unzero 1s both";}
+			else{}
+			if(30 > t){pr1.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(600 < t){pr1.style.animation = "zerozero 1.0s both";}
+			else{}
+
+			if(600 < t){pr2.style.animation = "unzero 1s both";}
+			else{}
+			if(600 > t){pr2.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1200 < t){pr2.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(650 < t){pr22.style.animation = "unzeroshake 1.6s infinite alternate";}
+			else{}
+			if(650 > t){pr22.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1200 < t){pr22.style.animation = "zerozero 1.5s both";}
+			else{}					
+
+			if(1270 < t){pr3.style.animation = "unzero 1s both";}
+			else{}
+			if(1270 > t){pr3.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1800 < t){pr3.style.animation = "zerozero 1.5s both";}
+			else{}	
+
+			if(1850 < t){pr4.style.animation = "unzero 1s both";}
+			else{}
+			if(1850 > t){pr4.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(2800 < t){pr4.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+			if(2000 < t){pr5.style.animation = "unzero 1.5s both";}
+			else{}
+			if(2000 > t){pr5.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(2800 < t){pr5.style.animation = "zerozero 1.5s both";}
+			else{}			
+			if(2100 < t){pr6.style.animation = "unzero 1.5s infinite alternate";}
+			else{}
+			if(2100 > t){pr6.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(2800 < t){pr6.style.animation = "zerozero 1.5s both";}
+			else{}
+
+
+			if(3000 < t){pr7.style.animation = "unzeroshake 2s infinite alternate";}
+			else{}
+			if(3000 > t){pr7.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(3500 < t){pr7.style.animation = "zerozero 1.5s both";}
+			else{}							
+			if(3000 < t){pr8.style.animation = "unzero 1.5s both";}
+			else{}
+			if(3000 > t){pr8.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(3500 < t){pr8.style.animation = "zerozero 1.5s both";}
+			else{}		
+			if(3100 < t){pr9.style.animation = "unzeroside 2s infinite alternate";}
+			else{}
+			if(3100 > t){pr9.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(3500 < t){pr9.style.animation = "zerozero 1.5s both";}
+			else{}									
+
+					
+			if(3600 < t){pr10.style.animation = "unzero 1.5s both";}
+			else{}
+			if(3600 > t){pr10.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(5300 < t){pr10.style.animation = "zerozero 1.5s both";}
+			else{}	
+
+			if(4000 < t){pr11.style.animation = "unzero 1.5s both";}
+			else{}
+			if(4000 > t){pr11.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(5300 < t){pr11.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(4500 < t){pr12.style.animation = "unzero 1.5s both";}
+			else{}
+			if(4500 > t){pr12.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(5300 < t){pr12.style.animation = "zerozero 1.5s both";}
+			else{}	
+		
+			if(5400 < t){pr13.style.animation = "unzero 1.5s both";}
+			else{}
+			if(5400 > t){pr13.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(6100 < t){pr13.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(5400 < t){pr14.style.animation = "unzeroshake 1.8s infinite alternate";}
+			else{}
+			if(5400 > t){pr14.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(6100 < t){pr14.style.animation = "zerozero 1.5s both";}
+			else{}	
+
+			if(6200 < t){pr15.style.animation = "unzero 1.5s both";}
+			else{}
+			if(6200 > t){pr15.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(7200 < t){pr15.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(6200 < t){pr16.style.animation = "unzero 1.5s both";}
+			else{}
+			if(6200 > t){pr16.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(8700 < t){pr16.style.animation = "zerozero 1.5s both";}
+			else{}		
+			if(7800 < t){pr17.style.animation = "unzero 1.5s both";}
+			else{}
+			if(7800 > t){pr17.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(8700 < t){pr17.style.animation = "zerozero 1.5s both";}
+			else{}									
+
+
+}
+		 	var A = 1
+			before.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after.style.opacity= "1";}else
+				{after.style.opacity= "0";}
+			
+			}
+			var B = 1
+			before2.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after2.style.opacity= "1";}else
+				{after2.style.opacity= "0";}
+			
+			}
+
+	</script>
+</body>
+</html>
