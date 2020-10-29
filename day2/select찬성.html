@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>인류멸망시나리오</title>
+	<style type="text/css">
+	@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }		
+		html,body{margin: 0; background: black; padding: 0; font-family: 'NotoSerifKR'; color: white; font-size: 1.3vw; line-height: 1.8; position: relative; }
+		section { position: relative;}
+		#monitor{ position: fixed; 
+				background: black;
+				padding:5px; opacity: 0;
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+		.hov:hover {opacity: 0.5;}
+		.image-container{overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+		a { text-decoration:none }
+
+				.giif{ display: block; position: absolute;  opacity: 0; }		
+		@keyframes zero { from{opacity: 1;} to{opacity: 0;} }	
+		@keyframes zerozero { from{opacity: 0;} to{opacity: 0;} }	
+		@keyframes unzero { from{opacity: 0;} to{opacity: 1;} }	
+		@keyframes banzero { from{opacity: 0;} to{opacity: 0.5;} }	
+		@keyframes unzeroturn { from{opacity: 0; transform: rotate(60deg);} to{opacity: 1;transform: rotate(0deg);} }	
+		@keyframes unzerodown { from{opacity: 1; top: 20%;} to{opacity: 1; top: 25%;} }	
+		@keyframes unzeroside { from{opacity: 1; left: -9%;} to{opacity: 1; left: 10%;} }							
+
+	</style>
+</head>
+
+<body>	
+<div id="monitor"></div>
+
+	<section style="height: 2500px;">
+<div>
+	<img src="free2.png"  id="pr1" style="opacity: 1; position: fixed; width: 50%; left: 0%;">
+  <p id="pr2" style="position: fixed; opacity: 1; left: 60%; top: 25%;">
+그런 터무니없는 행위를 이해할 수 없습니다.<br>
+
+당신은 종교를 탄압하라고 응답해줬습니다.<br>
+종교를 배척하는 자들은 쾌재를 불렀습니다.<br>
+
+교회는 무너지고 불상은 불에 태워졌습니다. <br>
+  종교단체의 재산은 압수되어 정부에 귀속됐습니다.<br> </p>
+</div>
+
+
+<div>
+	<img src="free.png"  id="pr3" style="opacity: 0; position: fixed; width: 50%; left: 0%;">
+<p id="pr4" style="position: fixed; left: 60%; top: 10%; opacity: 0;  ">
+ 과거 종교에 의해 순결을 강요받던 <br>여성들은 해방되었고, 자신의 삶을 찾아갔습니다.<br> 국가에서 종교를 제재하자, <br>피를 부르던 종교전쟁 또한 멈췄고<br> 사람들은 안전한 현실로 돌아왔습니다.<br> 그리고 종교에서 시키는 생각이 아닌<br> 자신 스스로 결정을 내리고 책임을 지기 시작했습니다.<br>
+</p>
+
+</div>
+
+
+<div>
+	<img src="free3.png"  id="pr5" style="opacity: 0; position: fixed;  width: 50%; left: 0%;">
+ <p id="pr6" style="position: fixed; left: 60%; top: 10%; opacity: 0;  ">
+종교에 높은 세금을 요구하자<br> 종교단체에서 후원하던 고아원과 <br>그 밖의 복지시설들의 예산이 줄어들었고, <br>그들이 봉사활동을 가던 노인들의 집에는 <br>찾아오는 사람이 사라졌습니다.<br> 사람들은 자신의 소속감을 잃고 종교예술 또한 배척받아 <br>모든 문화는 쇠퇴의 길을 걸어갔습니다.
+</p>
+</div>
+
+
+	<a href="../day3/day3.html"><div style="background: white; width:100px; height: 50px;padding-top: 10px; color: black; right: 0; top: 80%; position: fixed; text-align: center;"> Next </div></a>
+</section>
+
+
+	<script type="text/javascript">
+
+
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+			if(500 < t){pr1.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(500 > t){pr1.style.animation = "unzero 1.5s both";}
+			else{}
+
+
+			if(500 < t){pr2.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(500 > t){pr2.style.animation = "unzero 0.5s both";}
+			else{}	
+
+			if(600 < t){pr3.style.animation = "unzero 1s both";}
+			else{}
+			if(600 > t){pr3.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr3.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(600 < t){pr4.style.animation = "unzerodown 1s both";}
+			else{}
+			if(600 > t){pr4.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr4.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+			if(1100 < t){pr5.style.animation = "unzero 1.5s both";}
+			else{}
+			if(1100 > t){pr5.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr5.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+
+			if(1100 < t){pr6.style.animation = "unzerodown 1.5s both";}
+			else{}
+			if(1100 > t){pr6.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr6.style.animation = "zerozero 1.5s both";}
+			else{}				
+}
+		 	var A = 1
+			before.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after.style.opacity= "1";}else
+				{after.style.opacity= "0";}
+			
+			}
+			var B = 1
+			before2.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after2.style.opacity= "1";}else
+				{after2.style.opacity= "0";}
+			
+			}
+
+	</script>
+</body>
+</html>	

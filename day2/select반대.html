@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>인류멸망시나리오</title>
+	<style type="text/css">
+	@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }		
+		html,body{margin: 0; background: black; padding: 0; font-family: 'NotoSerifKR'; color: white; font-size: 1.3vw; line-height: 1.8; position: relative; }
+		section { position: relative;}
+		#monitor{ position: fixed; 
+				background: black; opacity: 0;
+				padding:5px; 
+				top:0; right:0; 
+				width:70px; height:20px;
+				color:white; z-index: 99999; }
+
+		.hov:hover {opacity: 0.5;}
+		.image-container{overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+		a { text-decoration:none }
+
+				.giif{ display: block; position: absolute;  opacity: 0; }		
+		@keyframes zero { from{opacity: 1;} to{opacity: 0;} }	
+		@keyframes zerozero { from{opacity: 0;} to{opacity: 0;} }	
+		@keyframes unzero { from{opacity: 0;} to{opacity: 1;} }	
+		@keyframes banzero { from{opacity: 0;} to{opacity: 0.5;} }	
+		@keyframes unzeroturn { from{opacity: 0; transform: rotate(60deg);} to{opacity: 1;transform: rotate(0deg);} }	
+		@keyframes unzerodown { from{opacity: 1; top: 20%;} to{opacity: 1; top: 25%;} }	
+		@keyframes unzeroside { from{opacity: 1; left: -9%;} to{opacity: 1; left: 10%;} }							
+
+	</style>
+</head>
+
+<body>	
+<div id="monitor"></div>
+
+	<section style="height: 2500px;">
+<div>
+	<img src="nofree.png"  id="pr1" style="opacity: 1; position: fixed; width: 50%; left: 0%;">
+  <p id="pr2" style="position: fixed; opacity: 1; left: 60%; top: 25%;">
+
+당신은 모든 사람에게 종교를 가지라고 지시했습니다.<br>
+종교 대표자들은 기뻐하며 당신에게 감사를 표했습니다.<br>
+모든 교육과정에 신학수업이 필수가 됐고<br> 
+거리 곳곳에 사원이 생겼습니다.<br> 
+종교를 가지게 된 사람들은 종교에서 강조하는<br>  마음가짐을 지키기위해 노력합니다.
+
+ </p>
+</div>
+
+
+<div>
+	<img src="nofree2.png"  id="pr3" style="opacity: 0; position: fixed; width: 50%; left: 0%;">
+<p id="pr4" style="position: fixed; left: 60%; top: 10%; opacity: 0;  ">
+종교의 건물이 많아지면서 자연스럽게 종교건축과 <br>예술이 발달하고 웅장한 찬송가들이 생겨났습니다.<br> 주말마다 예배를 보러오면서 사람들은 소속감과 사명감이 생겨났고<br> 불우한 이웃을 도우며 포교활동에 열을 올렸습니다. <br>그렇게 종교세력은 커져가 막대한 
+부와 권력을 가지게 됐습니다.
+</p>
+
+</div>
+
+
+<div>
+	<img src="nofree3.png"  id="pr5" style="opacity: 0; position: fixed;  width: 50%; left: 0%;">
+ <p id="pr6" style="position: fixed; left: 60%; top: 10%; opacity: 0;  ">
+ 그들은 신의 뜻과 다르게 신자들을 이용해 사리사욕을 취했고,<br> 다른 종교를 헐뜯으며 싸움을 부추겼습니다. <br>그리고 새로운 종교들이 계속 생겨나면서 이상한 교리들을 전파하며 <br>신도들의 
+생각 하나하나를 종교에 의지하게 만들어 버렸습니다. <br>신도들은 법과 질서보다 교리와 성경의 말을 절대적으로 믿으며<br> 범죄를 저질러도 죄책감을 가지지 않게 됐습니다.
+
+</p>
+</div>
+
+
+	<a href="../day3/day3.html"><div style="background: white; width:100px; height: 50px;padding-top: 10px; color: black; right: 0; top: 80%; position: fixed; text-align: center;"> Next </div></a>
+</section>
+
+
+	<script type="text/javascript">
+
+
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+
+	
+			if(500 < t){pr1.style.animation = "zerozero 1.5s both";}
+			else{}					
+			if(500 > t){pr1.style.animation = "unzero 1.5s both";}
+			else{}
+
+
+			if(500 < t){pr2.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(500 > t){pr2.style.animation = "unzero 0.5s both";}
+			else{}	
+
+			if(600 < t){pr3.style.animation = "unzero 1s both";}
+			else{}
+			if(600 > t){pr3.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr3.style.animation = "zerozero 1.5s both";}
+			else{}	
+			if(600 < t){pr4.style.animation = "unzerodown 1s both";}
+			else{}
+			if(600 > t){pr4.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1000 < t){pr4.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+			if(1100 < t){pr5.style.animation = "unzero 1.5s both";}
+			else{}
+			if(1100 > t){pr5.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr5.style.animation = "zerozero 1.5s both";}
+			else{}			
+
+
+			if(1100 < t){pr6.style.animation = "unzerodown 1.5s both";}
+			else{}
+			if(1100 > t){pr6.style.animation = "zerozero 0.5s both";}
+			else{}	
+			if(1950 < t){pr6.style.animation = "zerozero 1.5s both";}
+			else{}				
+}
+		 	var A = 1
+			before.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after.style.opacity= "1";}else
+				{after.style.opacity= "0";}
+			
+			}
+			var B = 1
+			before2.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after2.style.opacity= "1";}else
+				{after2.style.opacity= "0";}
+			
+			}
+
+	</script>
+</body>
+</html>	
